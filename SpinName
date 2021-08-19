@@ -1,0 +1,28 @@
+import random
+
+def JaoKorn():
+   round = int(input('How many name u want spin?:'))
+   x = 0
+   names = []
+   while x < round :
+       x = x + 1
+       ff = str(input('Enter name here:'))
+       names.append(ff)
+   print(names)
+   k = random.choice(names)
+   print('I choose u!!',k,'!!')
+
+def main():
+    print('Welcome to my project ☻')
+    proceed = str(input('U wanna use my spin? :'))
+    ok = 'yes'
+    not_ok = 'no'
+    if proceed == ok :
+        JaoKorn()
+    elif proceed == not_ok :
+        print('Bye (～￣▽￣)～')
+    else :
+        print('Enter only yes/no ')
+
+if __name__ == '__main__':
+    main()
